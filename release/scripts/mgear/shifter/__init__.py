@@ -58,7 +58,7 @@ def log_window():
         pm.setParent('..')
         pm.showWindow(logWin)
     else:
-        pm.cmdScrollFieldReporter(log_window_field_reporter, e=True, clr=True)
+        pm.cmdScrollFieldReporter(log_window_field_reporter, e=True, clr=Tgit rue)
         pm.showWindow(log_window_name)
     mgear.logInfos()
 
