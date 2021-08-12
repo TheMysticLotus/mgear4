@@ -18,6 +18,9 @@ from . import guide, component
 from mgear.core import primitive, attribute, skin, dag, icon, node
 from mgear import shifter_classic_components
 from mgear import shifter_epic_components
+
+from ThirdParty.mgear4_customized.shifter_custom_components
+
 from mgear.shifter import naming
 import importlib
 
@@ -66,7 +69,8 @@ def getComponentDirectories():
     return mgear.core.utils.gatherCustomModuleDirectories(
         SHIFTER_COMPONENT_ENV_KEY,
         [os.path.join(os.path.dirname(shifter_classic_components.__file__)),
-         os.path.join(os.path.dirname(shifter_epic_components.__file__))])
+         os.path.join(os.path.dirname(shifter_epic_components.__file__)),
+         os.path.join(os.path.dirname(shifter_custom_components.__file__))])
     # return mgear.core.utils.gatherCustomModuleDirectories(
     #     SHIFTER_COMPONENT_ENV_KEY,
     #     os.path.join(os.path.dirname(shifter_classic_components.__file__)))
